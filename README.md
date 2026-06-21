@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>2 задание</h1>
-    <pre>itertools import *
+    <pre><code>itertools import *
 def f(x,y,z,w):
     return (w==z) or (not (y<=w)) or (not x)
 for a1,a2,a3,a4,a5 in product([0,1],repeat=5):
@@ -14,9 +14,9 @@ for a1,a2,a3,a4,a5 in product([0,1],repeat=5):
     if len (set(t)) == 3:
         for p in permutations ('xyzw'):
             if [f(**dict (zip(p,r))) for r in t ] == [0,0,0]:
-                print(p)</pre>
+                print(p)</code></pre>
     <h1>5 задание</h1>
-    <pre># region 1
+    <pre><code># region 1
 def n3(num):
         if num == 0:
             return '0'
@@ -47,7 +47,15 @@ for n in range(1,1000):
     res = int(k,2)
     if res <= 19:
         mand.append(n)
-print(max(mand))</pre>
-    <h1>7 задание</h1>
+print(max(mand))</code></pre>
+    <h1>8 задание</h1>
+    <pre><code>from itertools import *
+k = 0
+for x in product(sorted('строка'), repeat=5):
+    s = ''.join(x)
+    k += 1
+    if k % 2 == 0 and s[0] not in 'аст' and s.count('о') == 2:
+        print(k,s)</code></pre>
+        
 </body>
 </html>
