@@ -470,7 +470,10 @@ while number > 0:
     if digit % 2 == 0:
         count +=1
     number = number // 36
-print(count)</code></pre>        
+print(count)</code></pre>
+<span class="lang-label">Python</span> </div>
+        </section> 
+
     <!-- ===== ЗАДАНИЕ 15 ===== -->   
         <section class="task-card">
             <div class="task-header">
