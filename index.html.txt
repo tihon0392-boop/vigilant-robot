@@ -382,6 +382,7 @@ for x in product(sorted('строка'), repeat=5):
         <section class="task-card">
             <div class="task-header">
                 <span class="task-number">№ 9</span>
+<span class="task-title">Работа с файлами (таблицы)</span>
                 <span class="task-badge">✏️ Python 3</span>
             </div>
             <div class="code-wrapper">
@@ -394,7 +395,10 @@ for s in open ('9txt'):
     a3 = [x for x in a if a.count(x) == 3]
     a1 = [x for x in a if a.count(x) == 1]
     if len(a3) == 3 and len (a1) == 4 and sum(a1)/len(a1)>a3[0]:
-        print(k)
+        print(k)</code></pre>
+        <span class="lang-label">Python</span>
+    </div>
+</section>
 
     <script>
         // === Инициализация подсветки синтаксиса ===
@@ -404,9 +408,6 @@ for s in open ('9txt'):
             });
             hljs.highlightAll();
         });
-    </div>
-</section>
-
         // === Функция копирования ===
         function copyCode(btn) {
             // Находим блок <code> внутри этого .code-wrapper
